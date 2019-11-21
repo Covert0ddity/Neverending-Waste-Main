@@ -44,6 +44,7 @@ Admin			= +@ +STEALTH +SOUNDS +DEBUG
 Game Master		= +EVERYTHING *EVERYTHING
 Lazy Master 	= +EVERYTHING -AUTOLOGIN *EVERYTHING
 Three Dog		= -@ -ADMIN +DJ
+Dad				= +DJ
 
 Scribe 			= +SERVER +DEBUG +VAREDIT +SPAWN -AUTOLOGIN
 Head Scribe 	= +@ +POLL -AUTOLOGIN
