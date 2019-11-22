@@ -1,18 +1,17 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Bad Deathclaw!</h1>
+<h1>Welcome To The Neverending Station!</h1>
 
-<b>This is an 18+ server, do not play if you are underage.</b>
+<b>This is a HRP, 18+ server, do not play if you are underage.</b>
 
 <i>
-Don't be a dick, and <b>read the rules</b> before you play.
 
 Development is active and we are always looking for more talent, we are open source and running a ported /tg/ version of legacy F13 code.
 
-Questions regarding the server can be directed to anyone with a Scribe or Paladin role on our Discord.
+Questions? Please ahelp staff in-game!
 
-Github: https://github.com/BadDeathclaw/TG-Claw
-Discord: https://discord.gg/TCj5cJN
+Github: https://github.com/goodolrusty/NES-TG-MAIN-BRANCH
+Discord: (Invite Only, Please Consult An Admin!)
 
-This server takes place before the Second Battle of Hoover Dam, in Nevada.
+This server takes place across different regions, and times. We will expand upon this further if it becomes more defined. Or until Mave's incessant nagging gets in ear.
 </i>
