@@ -21,7 +21,7 @@ $include antag_rep.txt
  SERVERSQLNAME nes
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Mojave Wasteland
+STATIONNAME Waster Taels
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 HUB
@@ -220,17 +220,16 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-DISCORDURL https://discord.gg/TCj5cJN
+# DISCORDURL
 
 ## Wiki address
-WIKIURL https://bad-deathclaw.fandom.com/wiki/Bad_Deathclaw_Wiki
+# WIKIURL 
 
 ## Rules address
-RULESURL https://discord.gg/TCj5cJN
-
+# RULESURL 
 
 ## Github address
-GITHUBURL https://github.com/BadDeathclaw/TG-Claw
+GITHUBURL https://github.com/goodolrusty/NES-TG-MAIN-BRANCH
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
