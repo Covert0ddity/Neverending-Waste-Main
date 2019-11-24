@@ -207,3 +207,11 @@
 
 /obj/item/projectile/plasma/scatter
 	damage = 25
+
+/obj/item/projectile/beam/laser/enclaveAER9 //only used for the enclave soldier NPC
+	damage = 25
+	armour_penetration = 10
+
+/obj/item/projectile/beam/laser/enclaveAER7 //only used for the enclave recruit NPC
+	damage = 11
+	armour_penetration = 10
