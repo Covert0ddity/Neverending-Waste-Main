@@ -1,4 +1,3 @@
-
 /mob/living/simple_animal/hostile/enclave
     //default value if no values are defined in the mobs themselves
 	name = "Enclave soldier"
@@ -33,16 +32,14 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 
-
-
-
-
 /mob/living/simple_animal/hostile/enclave/recruit //basic goon
      //combat values = 3burst to crit an unarmored, 4 for CA or T45 , 5 + 1shot connecting for a T51
 	ranged = 1
+	maxHealth = 75 //zergling HP, deploy in mass
+	health = 75
 	extra_projectiles = 2
-	retreat_distance = 5
-	minimum_distance = 5
+	retreat_distance = 3
+	minimum_distance = 2
 	//Fluff elements
 	name = "Enclave recruit"
 	desc = "A poorly armored recruit armed with a burst fire AER7."
@@ -52,21 +49,28 @@
 	//wich weapon is used
 	projectilesound = 'sound/f13weapons/laser_pistol.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/enclaveAER7
-	loot = list(/obj/effect/gibspawner/human)
 	//some flavor quotes, have fun adding to them
-	speak = list("Mutie SCUM!","DIE!","FOR THE US!","I SEE YOU, SCUM!")
+	speak = list("Muties are there!","DIE!","FOR THE US!","I SEE MUTATED SCUM!")
 	speak_emote = list("swear loudly")
 	emote_taunt = list("stares ferociously", "Aim his gun")
 	speak_chance = 10
 	taunt_chance = 25
 
-
 /mob/living/simple_animal/hostile/enclave/Soldier //better equipped goon
     //crit unarmored in two bursts, CA and T45 in 3, T51 in 4
 	ranged = 1
+	maxHealth = 150
+	health = 150
+	//melee if you get close, intended to be a ripper
+	harm_intent_damage = 5
+	melee_damage_lower = 25
+	melee_damage_upper = 25
+	attacktext = "cut you with his ripper"
+	attack_sound = 'sound/weapons/drill.ogg'
+	//melee end
 	extra_projectiles = 1
-	retreat_distance = 5
-	minimum_distance = 5
+	retreat_distance = 2
+	minimum_distance = 2
 	name = "Enclave soldier"
 	desc = "A well armored veteran armed with a modified AER9."
 	icon_state = "syndicaterangedstormtrooper"
@@ -74,8 +78,36 @@
 	projectilesound = 'sound/f13weapons/laser_rifle.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/enclaveAER9
 	loot = list(/obj/effect/gibspawner/human)
-	speak = list("REMEMBER THE RIG!","DIE!","FOR THE US of A!","BURN IN HELL!")
+	speak = list("REMEMBER THE RIG!","Engaging subhumans!!","Contact spotted!","BURN IN HELL!")
 	speak_emote = list("swear loudly")
 	emote_taunt = list("stares ferociously", "Aim his gun")
 	speak_chance = 10
 	taunt_chance = 25
+
+/mob/living/simple_animal/hostile/enclave/Elite //PA dude with a gatling, intended as a mini boss
+    //full burst kill anyone, altough a full burst takes two second to fire
+	ranged = 1
+	maxHealth = 750 //mother deathclaw HP pool
+	health = 750
+	harm_intent_damage = 5
+	melee_damage_lower = 45
+	melee_damage_upper = 45
+	attacktext = "Powerfists you"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	extra_projectiles = 9
+	retreat_distance = 0 //this guy ain't afraid of you
+	minimum_distance = 2 //try to stay close
+	name = "Enclave Elite"
+	desc = "A scary foe wearing advanced power armor and using a gatling laser, RUN!."
+	icon_state = "syndicaterangedspace"
+	icon_living = "syndicaterangedspace"
+	projectilesound = 'sound/f13weapons/laser_rifle.ogg'
+	projectiletype = /obj/item/projectile/beam/laser/enclaveAER7
+	loot = list(/obj/effect/gibspawner/human)
+	speak = list("FOR NAVARRO","I'm here to kick your ass and chew bubblegum, AND I'M OUT OF BUBBLEGUM!","ENCLAVE, HURRAH!","DIE IN LASER FIRE!")
+	speak_emote = list("yell hatefully")
+	emote_taunt = list("stares ferociously trough the eyeslits", "spin his gun barrels")
+	speak_chance = 30
+	taunt_chance = 50
+	loot = list(/obj/item/melee/powerfist) //just so they get something from killing him, can extend it later for the others goons
+
