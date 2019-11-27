@@ -842,7 +842,7 @@
 			    /obj/item/ammo_box/tube/m44,
 				/obj/item/ammo_box/tube/m44
 				)
-	
+
 	var/loot8 = list(
 				/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped,
 				/obj/item/ammo_box/tube/m44,
@@ -1399,5 +1399,15 @@
 	name = "trait book spawner"
 	lootcount = 1
 	loot = list(/obj/item/book/granter/trait/chemistry = 30,
-	/obj/item/book/granter/trait/trekking = 30, 
+	/obj/item/book/granter/trait/trekking = 30,
 	"" = 40)
+
+/obj/effect/spawner/lootdrop/f13/Enclaverecruit //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "enclave recruit loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,///14%to drop a stimm7%to drop a stimm
+			"" = 35,//chance to have no items spawn
+			"" = 35,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/ec =20
+			)
