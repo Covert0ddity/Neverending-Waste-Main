@@ -92,7 +92,7 @@
 	var/my_z // I don't want to confuse this with client registered_z
 
 	//Stops the game from crashing
-	var/const/MAX_NPCs = 2500
+	var/const/MAX_NPCs = 999999
 	var/global/NPC_count = 0
 
 /mob/living/simple_animal/Initialize()

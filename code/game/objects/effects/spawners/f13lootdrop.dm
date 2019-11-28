@@ -1406,8 +1406,170 @@
 	name = "enclave recruit loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,///14%to drop a stimm7%to drop a stimm
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,///10%to drop a stimm
 			"" = 35,//chance to have no items spawn
 			"" = 35,//having it twice to have "no drop" moments as we pick two items
 			/obj/item/stock_parts/cell/ammo/ec =20
+			)
+
+/obj/effect/spawner/lootdrop/f13/Enclavesoldier
+	name = "enclave soldier loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,///10%to drop a stimm
+			"" = 25,//chance to have no items spawn
+			"" = 25,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =15,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 25
+			)
+
+/obj/effect/spawner/lootdrop/f13/Enclaveelite
+	name = "enclave elite loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 15,///15%to drop a stimm
+			"" = 20,//chance to have no items spawn
+			"" = 15,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =20,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 30
+			)
+
+/obj/effect/spawner/lootdrop/f13/Enclaveofficer
+	name = "enclave officer loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 15,
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 15,
+			"" = 15,//chance to have no items spawn
+			"" = 15,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =10,
+			/obj/item/stack/f13Cash/random/bottle_cap/high = 30
+			)
+
+/obj/effect/spawner/lootdrop/f13/mrhandy
+	name = "Mr handy loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			"" = 25,//chance to have no items spawn
+			"" = 25,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =20,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30		)
+
+/obj/effect/spawner/lootdrop/f13/mrgusty
+	name = "MR gusty loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			"" = 15,//chance to have no items spawn
+			"" = 15,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =30,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 40
+			)
+
+/obj/effect/spawner/lootdrop/f13/protectrons
+	name = "protectrons loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 15,
+			"" = 25,//chance to have no items spawn
+			"" = 22,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =15,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 20,
+			/obj/item/dildo = 3
+			)
+
+/obj/effect/spawner/lootdrop/f13/sentrybot
+	name = "sentry bot loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 15,
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 15,
+			"" = 15,//chance to have no items spawn
+			"" = 15,//having it twice to have "no drop" moments as we pick two items
+			/obj/item/stock_parts/cell/ammo/mfc =10,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 30
+			)
+
+/obj/effect/spawner/lootdrop/f13/deathclaw
+	name = "deathclaw loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 15,
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 10,
+			"" = 20,
+			"" = 20,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 35
+			)
+
+/obj/effect/spawner/lootdrop/f13/deathclawmother
+	name = "deathclaw mother loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 25,
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 20,
+			"" = 10,
+			"" = 10,
+			/obj/effect/spawner/lootdrop/f13/cash_random_high = 35
+			)
+
+/obj/effect/spawner/lootdrop/f13/centaur
+	name = "centaur loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/item/reagent_containers/hypospray/medipen/stimpak = 10,
+			/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners= 30,
+			"" = 30,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 10,
+			/obj/item/dildo = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners =10
+			)
+
+/obj/effect/spawner/lootdrop/f13/ghoul
+	name = "ghoul loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners= 30,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30,
+			/obj/effect/spawner/lootdrop/f13/junkspawners =10,
+			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 10,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5
+			)
+
+/obj/effect/spawner/lootdrop/f13/ghoulreaver
+	name = "ghoul reaver loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 10,
+			/obj/effect/spawner/lootdrop/f13/junkspawners= 5,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 45,
+			/obj/effect/spawner/lootdrop/f13/junkspawners =5,
+			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 5,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15
+			)
+
+
+/obj/effect/spawner/lootdrop/f13/ghoulglowing
+	name = "glowing one loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5 = 5,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 45,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 25
+			)
+
+/obj/effect/spawner/lootdrop/f13/supermutants
+	name = "supermutants loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 20 ,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 35,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 5,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15
 			)
