@@ -140,7 +140,8 @@
 /obj/item/gun/energy/laser/lasergatling
 	name = "H&K L30 gatling laser"
 	desc = "Designed specifically for military use, these were in the prototype stage at the beginning of the Great War. Multiple barrels allowed longer firing before overheating."
-	icon_state = "lasergatling"
+	icon_state = "gatling"
+	item_state = "minigun"
 	burst_size = 8
 	fire_delay = 2
 	spread = 12
