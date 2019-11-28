@@ -33,7 +33,7 @@
 	var/user_refactory_cost
 	var/target_refactory_cost
 
-/datum/interaction/lewd/evaluate_user(mob/living/user, silent = TRUE)
+/datum/interaction/lewd/evaluate_user(mob/living/carbon/human/user, silent = TRUE)
 	if(..(user, silent))
 		if(user_not_tired && user.refactory_period)
 			if(!silent) //bye spam
@@ -79,7 +79,7 @@
 		return TRUE
 	return FALSE
 
-/datum/interaction/lewd/evaluate_target(mob/living/user, mob/living/target, silent = TRUE)
+/datum/interaction/lewd/evaluate_target(mob/living/carbon/human/user, mob/living/carbon/human/target, silent = TRUE)
 	if(..(user, target, silent))
 		if(target_not_tired && target.refactory_period)
 			if(!silent) //same with this
@@ -130,20 +130,20 @@
 		return TRUE
 	return FALSE
 
-/datum/interaction/lewd/post_interaction(mob/living/user, mob/living/target)
+/datum/interaction/lewd/post_interaction(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user_refactory_cost)
 		user.refactory_period += user_refactory_cost
 	if(target_refactory_cost)
 		target.refactory_period += target_refactory_cost
 	return ..()
 
-/datum/interaction/lewd/get_action_link_for(mob/living/user, mob/living/target)
+/datum/interaction/lewd/get_action_link_for(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return "<font color='#FF0000'><b>LEWD:</b></font> [..()]"
-	//if(user.stat == DEAD)
-		//to_chat(user, "<span class='warning'>You cannot erp as ghost!</span>")
-		//return
+	if(user.stat == DEAD)
+		to_chat(user, "<span class='warning'>You cannot erp as ghost!</span>")
+		return
 
-/mob/living/list_interaction_attributes()
+/mob/living/carbon/human/list_interaction_attributes()
 	var/dat = ..()
 	if(refactory_period)
 		dat += "<br>...are sexually exhausted for the time being."

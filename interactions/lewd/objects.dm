@@ -41,9 +41,9 @@
 	base_overlay.appearance_flags = RESET_COLOR
 	add_overlay(base_overlay)
 
-/obj/item/dildo/attack(mob/living/M, mob/living/user)
+/obj/item/dildo/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	var/message = ""
-	if(istype(M, /mob/living) && user.zone_selected == "groin" && M.is_bottomless())
+	if(istype(M, /mob/living/carbon/human) && user.zone_selected == "groin" && M.is_bottomless())
 		if(M.client && M.client.prefs)
 			if(M.client.prefs.wasteland_toggles & VERB_CONSENT)
 				if(hole == CUM_TARGET_VAGINA && M.has_vagina())
@@ -57,7 +57,7 @@
 	else if(user.a_intent == INTENT_HARM)
 		return ..()
 
-/obj/item/dildo/attack_self(mob/living/user as mob)
+/obj/item/dildo/attack_self(mob/living/carbon/human/user as mob)
 	if(hole == CUM_TARGET_VAGINA)
 		hole = CUM_TARGET_ANUS
 	else
@@ -120,9 +120,9 @@
 	name = "F.I.S.T.R. Machine"
 	desc = "Fully Integrated Sexual Tension Relief Machine"
 
-/obj/item/dildo/cyborg/attack(mob/living/M, mob/living/user)
+/obj/item/dildo/cyborg/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	var/message = ""
-	if(istype(M, /mob/living) && M.is_bottomless())
+	if(istype(M, /mob/living/carbon/human) && M.is_bottomless())
 		if(M.client && M.client.prefs)
 			if(M.client.prefs.wasteland_toggles & VERB_CONSENT)
 				if(hole == CUM_TARGET_VAGINA && M.has_vagina())
