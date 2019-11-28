@@ -378,18 +378,18 @@
 	desc = "A microfusion cell, typically used as ammunition for large energy weapons. YOU CAN RECHARGE THIS STUPID SON OF A BITCH FOR THE LOW RATE OF 0.99 NO SHIPPING AND HANDLING MOTHERFUCKER"
 	icon_state = "mfc"
 	maxcharge = 1200
-	chargerate = 300
+	chargerate = 0 //can't be recharged by recharger (why keep the recharger then?)
 
 /obj/item/stock_parts/cell/ammo/ecp
 	name = "electron charge pack"
 	desc = "An electron charge pack, typically used as ammunition for rapidly-firing energy weapons."
 	icon_state = "icell"
 	maxcharge = 2400
-	chargerate = 400
+	chargerate = 0
 
 /obj/item/stock_parts/cell/ammo/ec
 	name = "energy cell"
 	desc = "An energy cell, typically used as ammunition for small-arms energy weapons."
 	icon_state = "ec"
 	maxcharge = 300
-	chargerate = 300
+	chargerate = 0
