@@ -41,6 +41,7 @@
 /mob/living/simple_animal/hostile/wolf/alpha
 	name = "alpha feral dog"
 	desc = "The dogs that survived the Great War are a larger, and tougher breed, size of a wolf.<br>Wait... This one's a wolf!"
+	gender = MALE
 	icon_state = "wolf_angry"
 	icon_living = "wolf_angry"
 	icon_dead = "wolf_dead"

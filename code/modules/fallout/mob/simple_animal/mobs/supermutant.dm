@@ -53,6 +53,7 @@
 	icon_dead = "hulk_brahmin_s"
 	maxHealth = 300
 	health = 300
+	gender = MALE
 	speak_chance = 7 //30 //Oh my god he never shuts up.
 	anchored = TRUE
 	mob_size = MOB_SIZE_LARGE
