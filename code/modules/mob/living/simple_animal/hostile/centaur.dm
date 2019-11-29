@@ -34,6 +34,7 @@
 							/obj/item/stack/sheet/bone = 2)
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
+	loot = list(/obj/effect/spawner/lootdrop/f13/centaur)
 
 /obj/item/projectile/neurotox
 	name = "spit"
