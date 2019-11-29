@@ -101,6 +101,14 @@
 	handcrafting = new()
 	if(gender == PLURAL)
 		gender = pick(MALE,FEMALE)
+		if (gender == MALE)
+			has_penis = TRUE
+			has_vagina = FALSE
+			has_breasts = FALSE
+		if (gender == FEMALE)
+			has_penis = FALSE
+			has_vagina = TRUE
+			has_breasts = TRUE
 	if(!real_name)
 		real_name = name
 	if(!loc)
