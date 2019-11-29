@@ -539,7 +539,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Jet",				/obj/item/reagent_containers/pill/patch/jet,  									29),
 		new /datum/data/wasteland_equipment("Epi Emergency Medipen",	/obj/item/reagent_containers/hypospray/medipen ,						125)
 		)
-	
+
 /obj/machinery/mineral/wasteland_vendor/weapons
 	name = "Wasteland Vending Machine - Weapons"
 	icon_state = "weapon_idle"
@@ -587,7 +587,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Roman Shield",					/obj/item/shield/riot/roman,										880),
 		new /datum/data/wasteland_equipment("Telescopic Riot Shield",		/obj/item/shield/riot/tele,											1499),
 		new /datum/data/wasteland_equipment("Riot shield",					/obj/item/shield/riot,												1250)
-		
+
 		)
 
 /obj/machinery/mineral/wasteland_vendor/ammo
@@ -609,9 +609,21 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("M1911 mag",					/obj/item/ammo_box/magazine/m45,									99),
 		new /datum/data/wasteland_equipment("10mm pistol mag",				/obj/item/ammo_box/magazine/m10mm, 									159),
 		new /datum/data/wasteland_equipment(".38 speed loader",				/obj/item/ammo_box/c38,												25),
-		new /datum/data/wasteland_equipment(".44 Speedloader",				/obj/item/ammo_box/m44,												199)
-		)
+		new /datum/data/wasteland_equipment(".44 Speedloader",				/obj/item/ammo_box/m44,												199),
+		new /datum/data/wasteland_equipment("Rubbershot",					/obj/item/storage/box/rubbershot,									80),
+		new /datum/data/wasteland_equipment("Buckshot",						/obj/item/storage/box/lethalshot,									160),
+		new /datum/data/wasteland_equipment("10mm SMG mag",					/obj/item/ammo_box/magazine/m10mm_auto,								160),
+		new /datum/data/wasteland_equipment("Beanbag Box",					/obj/item/storage/box/rubbershot/beanbag,							100),
+		new /datum/data/wasteland_equipment("Small 5.56m Mag",				/obj/item/ammo_box/magazine/m556/rifle/small,						50),
+		new /datum/data/wasteland_equipment("5.56 Mag",						/obj/item/ammo_box/magazine/m556/rifle,								95),
+		new /datum/data/wasteland_equipment("9mm Uzi mag",					/obj/item/ammo_box/magazine/uzim9mm,								123),
+		new /datum/data/wasteland_equipment("9mm SMG Mag",					/obj/item/ammo_box/magazine/greasegun,								120),
+		new /datum/data/wasteland_equipment(".45 Drum Mag",					/obj/item/ammo_box/magazine/tommygunm45,							200),
+		new /datum/data/wasteland_equipment("12gauge Drum",					/obj/item/ammo_box/magazine/d12g,									250),
+		new /datum/data/wasteland_equipment("Sniper Rounds",				/obj/item/ammo_box/magazine/sniper_rounds,							300),
+		new /datum/data/wasteland_equipment("Shotgun Slugs",				/obj/item/storage/box/slugshot,										175),
 
+		)
 /obj/machinery/mineral/wasteland_vendor/clothing
 	name = "Wasteland Vending Machine - Clothing"
 	icon_state = "armor_idle"

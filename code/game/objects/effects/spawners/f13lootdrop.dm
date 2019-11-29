@@ -1268,17 +1268,12 @@
 
 	loot = list(
 				/obj/item/stack/f13Cash/random/bottle_cap/low = 50,
-				/obj/item/stack/f13Cash/random/ncr/low = 30,
-				/obj/item/stack/f13Cash/random/denarius/low = 30,
-				/obj/item/stack/f13Cash/random/aureus/low = 10,
-				/obj/item/stack/f13Cash/random/bottle_cap/med = 25,
-				/obj/item/stack/f13Cash/random/ncr/med = 15,
-				/obj/item/stack/f13Cash/random/denarius/med = 15,
-				/obj/item/stack/f13Cash/random/aureus/med = 5,
-				/obj/item/stack/f13Cash/random/bottle_cap/high = 10,
-				/obj/item/stack/f13Cash/random/ncr/high = 5,
-				/obj/item/stack/f13Cash/random/denarius/high = 5,
-				/obj/item/stack/f13Cash/random/aureus/high = 1,
+				/obj/item/stack/f13Cash/random/ncr/low = 20,
+				/obj/item/stack/f13Cash/random/bottle_cap/med = 10,
+				/obj/item/stack/f13Cash/random/ncr/med = 5,
+				/obj/item/stack/f13Cash/random/bottle_cap/high = 1,
+				/obj/item/stack/f13Cash/random/ncr/high = 4,
+				"" = 10,
 				)
 
 /obj/effect/spawner/lootdrop/f13/cash_random_med
@@ -1287,17 +1282,12 @@
 
 	loot = list(
 				/obj/item/stack/f13Cash/random/bottle_cap/med = 50,
-				/obj/item/stack/f13Cash/random/ncr/med = 30,
-				/obj/item/stack/f13Cash/random/denarius/med = 30,
-				/obj/item/stack/f13Cash/random/aureus/med = 10,
-				/obj/item/stack/f13Cash/random/bottle_cap/low = 25,
-				/obj/item/stack/f13Cash/random/ncr/low = 15,
-				/obj/item/stack/f13Cash/random/denarius/low = 15,
-				/obj/item/stack/f13Cash/random/aureus/low = 5,
-				/obj/item/stack/f13Cash/random/bottle_cap/high = 10,
-				/obj/item/stack/f13Cash/random/ncr/high = 5,
-				/obj/item/stack/f13Cash/random/denarius/high = 5,
-				/obj/item/stack/f13Cash/random/aureus/high = 1,
+				/obj/item/stack/f13Cash/random/ncr/med = 20,
+				/obj/item/stack/f13Cash/random/bottle_cap/low = 10,
+				/obj/item/stack/f13Cash/random/ncr/low = 5,
+				/obj/item/stack/f13Cash/random/bottle_cap/high = 1,
+				/obj/item/stack/f13Cash/random/ncr/high = 4,
+				"" = 10,
 				)
 
 /obj/effect/spawner/lootdrop/f13/cash_random_high
@@ -1306,17 +1296,12 @@
 
 	loot = list(
 				/obj/item/stack/f13Cash/random/bottle_cap/high = 50,
-				/obj/item/stack/f13Cash/random/ncr/high = 30,
-				/obj/item/stack/f13Cash/random/denarius/high = 30,
-				/obj/item/stack/f13Cash/random/aureus/high = 10,
-				/obj/item/stack/f13Cash/random/bottle_cap/med = 25,
-				/obj/item/stack/f13Cash/random/ncr/med = 15,
-				/obj/item/stack/f13Cash/random/denarius/med = 15,
-				/obj/item/stack/f13Cash/random/aureus/med = 5,
-				/obj/item/stack/f13Cash/random/bottle_cap/low = 10,
-				/obj/item/stack/f13Cash/random/ncr/low = 5,
-				/obj/item/stack/f13Cash/random/denarius/low = 5,
-				/obj/item/stack/f13Cash/random/aureus/low = 1,
+				/obj/item/stack/f13Cash/random/ncr/high = 20,
+				/obj/item/stack/f13Cash/random/bottle_cap/med = 10,
+				/obj/item/stack/f13Cash/random/ncr/med = 5,
+				/obj/item/stack/f13Cash/random/bottle_cap/low = 1,
+				/obj/item/stack/f13Cash/random/ncr/low = 4,
+				"" = 10,
 				)
 
 /obj/effect/spawner/lootdrop/f13/cash_legion_low
@@ -1602,25 +1587,29 @@
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 2,
 			/obj/effect/spawner/lootdrop/f13/junkspawners= 30,
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30,
 			/obj/effect/spawner/lootdrop/f13/junkspawners =10,
-			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 10,
-			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5
+			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 5,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 3,
+			"" = 20,
+			"" = 5
 			)
 
 /obj/effect/spawner/lootdrop/f13/ghoulreaver
 	name = "ghoul reaver loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 10,
-			/obj/effect/spawner/lootdrop/f13/junkspawners= 5,
-			/obj/effect/spawner/lootdrop/f13/cash_random_low = 45,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 1,
+			/obj/effect/spawner/lootdrop/f13/junkspawners= 20,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 40,
 			/obj/effect/spawner/lootdrop/f13/junkspawners =5,
-			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 5,
-			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15
+			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 4,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 10,
+			"" = 10,
+			"" = 5
 			)
 
 
@@ -1628,23 +1617,29 @@
 	name = "glowing one loot"
 	lootcount = 3 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4mob = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5mob = 5,
-			/obj/effect/spawner/lootdrop/f13/cash_random_med = 45,
-			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 25
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 3,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4mob = 2,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5mob = 1,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 44,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15,
+			"" = 20,
+			"" = 20,
+			"" = 25
 			)
 
-/obj/effect/spawner/lootdrop/f13/supermutants
+/obj/effect/spawner/lootdrop/f13/supermutant
 	name = "supermutants loot"
-	lootcount = 2 //how many tiems will it drops
+	lootcount = 3 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 20 ,
-			/obj/effect/spawner/lootdrop/f13/cash_random_low = 35,
-			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 5,
-			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 10 ,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 1,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 19,
+			"" = 10,
+			"" = 10,
+			"" = 5
 			)
 
 /obj/effect/spawner/lootdrop/f13/raider //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
@@ -1661,7 +1656,7 @@
 			/obj/item/dildo = 1, //raiders have to have fun too
 			"" = 5,//chance to have no items spawn
 			"" = 10,//having it twice to have "no drop" moments as we pick two items
-			"" = 10,
+			"" = 10
 			)
 
 /obj/effect/spawner/lootdrop/f13/cazador //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
