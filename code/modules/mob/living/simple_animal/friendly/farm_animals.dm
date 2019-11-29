@@ -117,6 +117,7 @@
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
+	loot = list(/obj/effect/spawner/lootdrop/f13/brahmin)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6)
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
@@ -390,6 +391,7 @@
 	speak_chance = 0.4
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6,
 							/obj/item/stack/sheet/animalhide/brahmin = 3)
+	/obj/effect/spawner/lootdrop/f13/brahmin
 
 /mob/living/simple_animal/hostile/retaliate/goat/bighorn
 	name = "big horner"
@@ -409,6 +411,7 @@
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6,
 							/obj/item/stack/sheet/sinew = 3,
 							/obj/item/stack/sheet/bone = 4)
+	loot = list(/obj/effect/spawner/lootdrop/f13/bighorner)
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "kicks"
@@ -620,4 +623,4 @@ mob/living/simple_animal/cow/brahmin/Topic(href, href_list)
 			back_icon = BF.get_overlay()
 		add_overlay(back_icon)
 
-	return 
+	return
