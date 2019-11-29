@@ -30,6 +30,7 @@
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul = 2,
 							/obj/item/stack/sheet/animalhide/human = 1,
 							/obj/item/stack/sheet/bone = 1)
+	loot = list(/obj/effect/spawner/lootdrop/f13/ghoul)
 
 /mob/living/simple_animal/hostile/ghoul/reaver
 	name = "feral ghoul reaver"
@@ -45,6 +46,7 @@
 	harm_intent_damage = 5
 	melee_damage_lower = 15
 	melee_damage_upper = 15
+	loot = list(/obj/effect/spawner/lootdrop/f13/ghoulreaver)
 
 /mob/living/simple_animal/hostile/ghoul/glowing
 	name = "glowing feral ghoul"
@@ -58,6 +60,7 @@
 	harm_intent_damage = 10
 	melee_damage_lower = 20
 	melee_damage_upper = 20
+	loot = list(/obj/effect/spawner/lootdrop/f13/ghoulglowing)
 
 /mob/living/simple_animal/hostile/ghoul/glowing/Initialize()
 	. = ..()

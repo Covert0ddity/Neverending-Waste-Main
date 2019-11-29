@@ -32,7 +32,7 @@
 /mob/living/simple_animal/hostile/raider/ranged
 	icon_state = "raiderranged"
 	icon_living = "raiderranged"
-	loot = list(/obj/effect/mob_spawn/human/corpse/raiderranged, /obj/item/gun/ballistic/shotgun/boltaction, /obj/effect/spawner/lootdrop/f13/raider)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raiderranged, /obj/item/gun/ballistic/shotgun/boltaction,/obj/effect/spawner/lootdrop/f13/raider)
 	ranged = 1
 	maxHealth = 115
 	health = 115
@@ -49,7 +49,7 @@
 	health = 170
 	extra_projectiles = 2
 	casingtype = /obj/item/ammo_casing/c9mmr
-	loot = list(/obj/effect/mob_spawn/human/corpse/raiderboss, /obj/item/gun/ballistic/automatic/greasegun, /obj/effect/spawner/lootdrop/f13/raider)
+	loot = list(/obj/effect/mob_spawn/human/corpse/raiderboss, /obj/item/gun/ballistic/automatic/greasegun,/obj/effect/spawner/lootdrop/f13/raider)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()

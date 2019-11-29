@@ -13,7 +13,6 @@
 	emote_see = list("screeches")
 	a_intent = INTENT_HARM
 	maxHealth = 100
-	gender = MALE
 	health = 100
 	speed = 2
 	harm_intent_damage = 15
@@ -35,6 +34,7 @@
 							/obj/item/stack/sheet/bone = 2)
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
+	loot = list(/obj/effect/spawner/lootdrop/f13/centaur)
 
 /obj/item/projectile/neurotox
 	name = "spit"

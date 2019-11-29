@@ -5,6 +5,7 @@
 	icon_state = "skeleton"
 	icon_living = "skeleton"
 	icon_dead = "skeleton"
+	gender = NEUTER
 	mob_biotypes = list(MOB_UNDEAD, MOB_HUMANOID)
 	turns_per_move = 5
 	speak_emote = list("rattles")
