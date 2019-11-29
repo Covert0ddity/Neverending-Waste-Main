@@ -1573,3 +1573,140 @@
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 5,
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 15
 			)
+
+/obj/effect/spawner/lootdrop/f13/raider //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "Raider loot."
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 5, //alcohol drop
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 4, //junk drop
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 5, //tier 2 ammo drop
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 15, //tier 1 ammo drop
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 10, //random med
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug = 10, //random drug
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 25, //cash moneyz
+			/obj/item/dildo = 1, //raiders have to have fun too
+			"" = 5,//chance to have no items spawn
+			"" = 10,//having it twice to have "no drop" moments as we pick two items
+			"" = 10,
+			)
+
+/obj/effect/spawner/lootdrop/f13/cazador //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "cazador loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 10,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 25,
+			"" = 25,//chance to have no items spawn
+			"" = 25,//having it twice to have "no drop" moments as we pick two items
+			)
+
+/obj/effect/spawner/lootdrop/f13/cazador/young //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "smol cazador loot"
+	lootcount = 1 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 15,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 1,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 29,
+			"" = 65,//chance to have no items spawn
+			)
+
+/obj/effect/spawner/lootdrop/f13/radscorpion //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "bastard loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 10,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 20,
+			"" = 20,//chance to have no items spawn
+			"" = 20,
+			)
+
+/obj/effect/spawner/lootdrop/f13/gecko //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "cutie loot"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 5,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 25,
+			"" = 50,//chance to have no items spawn
+			"" = 15,
+			)
+
+/obj/effect/spawner/lootdrop/f13/radroach //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "roach roach"
+	lootcount = 1 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 1,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 1,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 58,
+			"" = 40,//chance to have no items spawn
+			)
+
+/obj/effect/spawner/lootdrop/f13/molerat //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "spirit animal"
+	lootcount = 1 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 5,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 50,
+			"" = 40,//chance to have no items spawn
+			)
+
+/obj/effect/spawner/lootdrop/f13/eyebot //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "i see your loot"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 20,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/item/stock_parts/cell/ammo/mfc = 5,
+			/obj/item/stock_parts/cell/ammo/ec = 20,
+			"" = 20,
+			"" = 20,//chance to have no items spawn
+			"" = 10,
+			)
+
+/obj/effect/spawner/lootdrop/f13/bighorner //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "will you please not eat my pants"
+	lootcount = 1 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 3,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 3,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 3,
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 1,
+			"" = 90,
+			)
+
+/obj/effect/spawner/lootdrop/f13/brahmin //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "moo-ching off the loot"
+	lootcount = 1 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 1,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 1,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 1,
+			"" = 97,
+			)
+
+/obj/effect/spawner/lootdrop/f13/wolf //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "mans best... wait"
+	lootcount = 2 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 20,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 25,
+			"" = 25,
+			"" = 25,
+			)
+
+/obj/effect/spawner/lootdrop/f13/wolf/alpha //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
+	name = "top dog"
+	lootcount = 3 //how many tiems will it drops
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/cash_random_med = 20,
+			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
+			/obj/effect/spawner/lootdrop/f13/junkspawners = 25,
+			/obj/effect/spawner/lootdrop/f13/cash_random_low = 25,
+			"" = 10,
+			"" = 15,
+			)
