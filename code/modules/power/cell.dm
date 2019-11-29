@@ -384,7 +384,7 @@
 	name = "electron charge pack"
 	desc = "An electron charge pack, typically used as ammunition for rapidly-firing energy weapons."
 	icon_state = "icell"
-	maxcharge = 3600
+	maxcharge = 5400
 	chargerate = 0
 
 /obj/item/stock_parts/cell/ammo/ec
