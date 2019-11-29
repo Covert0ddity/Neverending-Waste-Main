@@ -39,6 +39,9 @@
 		if(charging)
 			to_chat(user, "<span class='warning'>There is already a cell in the charger!</span>")
 			return
+		if(istype(W, /obj/item/stock_parts/cell/ammo)) // so you can't recharge ammos, it check if the cell belongs to the cell/ammo parent
+			to_chat(user,"The ammo is not rechargeable")
+			return
 		else
 			var/area/a = loc.loc // Gets our locations location, like a dream within a dream
 			if(!isarea(a))

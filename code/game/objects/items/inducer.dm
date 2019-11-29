@@ -107,6 +107,9 @@
 	if(istype(A, /obj/item/gun/energy))
 		to_chat(user,"Error unable to interface with device")
 		return FALSE
+	if(istype(A, /obj/item/stock_parts/cell/ammo)) // so you can't recharge ammos, it check if the cell belongs to the cell/ammo parent
+		to_chat(user,"The ammo is not rechargeable")
+		return FALSE
 	if(istype(A, /obj))
 		O = A
 	if(C)
