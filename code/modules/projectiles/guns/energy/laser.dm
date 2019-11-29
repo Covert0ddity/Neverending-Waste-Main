@@ -142,7 +142,7 @@
 	desc = "Designed specifically for military use, these were in the prototype stage at the beginning of the Great War. Multiple barrels allowed longer firing before overheating."
 	icon_state = "gatling"
 	item_state = "minigun"
-	burst_size = 8
+	burst_size = 5
 	fire_delay = 2
 	spread = 12
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter)
