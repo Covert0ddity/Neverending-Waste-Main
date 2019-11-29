@@ -9,17 +9,14 @@
 	return ..()
 */
 
-/mob/living/carbon/human/MouseDrop_T(mob/M as mob, mob/living/carbon/human/user as mob)
+/mob/MouseDrop_T(mob/M as mob, mob/living/user as mob)
 	if(M == src || src == usr || M != usr)
 		return
 	if(usr.restrained())
 		return
-	if(!ishuman(src))
-		return
-
 	user.try_interaction(src)
 
-/mob/living/carbon/human/verb/interact_with()
+/mob/living/verb/interact_with()
 	set name = "Interact With"
 	set desc = "Perform an interaction with someone."
 	set category = "IC"
@@ -28,7 +25,7 @@
 	if(usr != src && !usr.restrained() && ishuman(src))
 		usr.try_interaction(src)
 
-/mob/living/carbon/human/try_interaction(mob/living/carbon/human/partner)
+/mob/living/try_interaction(mob/living/partner)
 	var/dat = "<B><HR><FONT size=3>Interacting with \the [partner]...</FONT></B><HR>"
 
 	dat += "You...<br>[list_interaction_attributes()]<hr>"

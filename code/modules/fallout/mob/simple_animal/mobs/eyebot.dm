@@ -14,6 +14,7 @@
 	response_help = "touches"
 	response_disarm = "shoves"
 	response_harm = "hits"
+	gender = NUETER
 	loot = list(/obj/effect/spawner/lootdrop/f13/eyebot)
 	move_to_delay = 3
 	stat_attack = 1
