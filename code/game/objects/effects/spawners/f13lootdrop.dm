@@ -1402,6 +1402,79 @@
 	/obj/item/book/granter/trait/trekking = 30,
 	"" = 40)
 
+//MOBs AMMO DROP//
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob
+	name = "tier 1 ammo"
+
+	loot = list(
+				/obj/item/ammo_box/magazine/m9mm,
+				/obj/item/storage/box/lethalshot,
+				/obj/item/storage/box/rubbershot,
+				/obj/item/storage/box/rubbershot/beanbag,
+				/obj/item/ammo_box/c38,
+				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m556/rifle/small
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob
+	name = "tier 2 ammo"
+
+	loot = list(
+				/obj/item/ammo_box/magazine/m45,
+				/obj/item/ammo_box/a762,
+        		/obj/item/ammo_box/a308,
+				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/m556/rifle,
+				/obj/item/ammo_box/c38,
+				/obj/item/ammo_box/magazine/m9mm,
+				/obj/item/ammo_box/m44,
+				/obj/item/ammo_box/tube/a357,
+				/obj/item/ammo_box/a357,
+				/obj/item/ammo_box/magazine/m556/rifle/small
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob
+	name = "tier 3 ammo"
+
+	loot = list(
+				/obj/item/storage/box/lethalshot,
+				/obj/item/ammo_box/magazine/uzim9mm,
+				/obj/item/ammo_box/magazine/m10mm_adv,
+				/obj/item/ammo_box/magazine/greasegun,
+				/obj/item/ammo_box/needle,
+				/obj/item/ammo_box/magazine/tommygunm45,
+				/obj/item/ammo_box/tube/m44,
+				/obj/item/ammo_box/magazine/m10mm_auto,
+				/obj/item/stock_parts/cell/ammo/ec
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4mob
+	name = "tier 4 ammo"
+
+	loot = list(
+				/obj/item/ammo_box/magazine/d12g,
+				/obj/item/ammo_box/magazine/m50,
+				/obj/item/ammo_box/magazine/m556/rifle,
+				/obj/item/ammo_box/c4570,
+				/obj/item/ammo_box/tube/c4570,
+				/obj/item/ammo_box/a50MG,
+				/obj/item/ammo_box/a762/doublestacked,
+				/obj/item/stock_parts/cell/ammo/mfc
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5mob
+	name = "tier 5 ammo"
+
+	loot = list(
+				/obj/item/ammo_box/magazine/mm195x129,
+				/obj/item/ammo_box/magazine/mm195x129/hollow,
+				/obj/item/ammo_box/magazine/sniper_rounds,
+				/obj/item/ammo_box/magazine/sniper_rounds/penetrator,
+				/obj/item/ammo_box/magazine/d12g
+				)
+
+//MOBs DROP TABLES//
 /obj/effect/spawner/lootdrop/f13/Enclaverecruit //using a defined spawner works fine as it is called by the loot function of the mob, only used when the mod dies
 	name = "enclave recruit loot"
 	lootcount = 2 //how many tiems will it drops
@@ -1528,8 +1601,8 @@
 	name = "ghoul loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 5,
 			/obj/effect/spawner/lootdrop/f13/junkspawners= 30,
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 30,
 			/obj/effect/spawner/lootdrop/f13/junkspawners =10,
@@ -1541,8 +1614,8 @@
 	name = "ghoul reaver loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 10,
 			/obj/effect/spawner/lootdrop/f13/junkspawners= 5,
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 45,
 			/obj/effect/spawner/lootdrop/f13/junkspawners =5,
@@ -1555,9 +1628,9 @@
 	name = "glowing one loot"
 	lootcount = 3 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4 = 10,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5 = 5,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4mob = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5mob = 5,
 			/obj/effect/spawner/lootdrop/f13/cash_random_med = 45,
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 25
 			)
@@ -1566,8 +1639,8 @@
 	name = "supermutants loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 15,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 15,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3mob = 10,
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 20 ,
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 35,
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 5,
@@ -1580,8 +1653,8 @@
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/alcoholspawner = 5, //alcohol drop
 			/obj/effect/spawner/lootdrop/f13/junkspawners = 4, //junk drop
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 5, //tier 2 ammo drop
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 15, //tier 1 ammo drop
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 5, //tier 2 ammo drop
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob = 15, //tier 1 ammo drop
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 10, //random med
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug = 10, //random drug
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 25, //cash moneyz
@@ -1595,7 +1668,7 @@
 	name = "cazador loot"
 	lootcount = 2 //how many tiems will it drops
 	loot = list(
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2 = 10,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2mob = 10,
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 5,
 			/obj/effect/spawner/lootdrop/f13/cash_random_med = 25,
 			"" = 25,//chance to have no items spawn
@@ -1673,7 +1746,7 @@
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 3,
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 3,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 3,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob = 3,
 			/obj/effect/spawner/lootdrop/f13/cash_random_med = 1,
 			"" = 90,
 			)
@@ -1684,7 +1757,7 @@
 	loot = list(
 			/obj/effect/spawner/lootdrop/f13/cash_random_low = 1,
 			/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds = 1,
-			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1 = 1,
+			/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1mob = 1,
 			"" = 97,
 			)
 
