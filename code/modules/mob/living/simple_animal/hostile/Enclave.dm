@@ -52,9 +52,9 @@
 	//what loot he drop,the loot itself is spawned along the body (see Ecorpses)
 	loot = list(/obj/effect/mob_spawn/human/corpse/enclaverecruit , /obj/effect/spawner/lootdrop/f13/Enclaverecruit)
 	//some flavor quotes, have fun adding to them
-	speak = list("Muties are there!","DIE!","FOR THE US!","I SEE MUTATED SCUM!")
-	speak_emote = list("swear loudly")
-	emote_taunt = list("stares ferociously", "Aim his gun")
+	speak = list("Oh God, I'm just in this for the paycheck!","DIE!","MY LIFE FOR THE STATES!","I SEE MUTATED SCUM!")
+	speak_emote = list("swears loudly")
+	emote_taunt = list("stares patriotically", "aims his pistol")
 	speak_chance = 10
 	taunt_chance = 25
 
@@ -79,11 +79,10 @@
 	icon_living = "syndicaterangedstormtrooper"
 	projectilesound = 'sound/f13weapons/laser_rifle.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/enclaveAER9
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclavetrooper)
-
-	speak = list("REMEMBER THE RIG!","Engaging subhumans!!","Contact spotted!","BURN IN HELL!")
-	speak_emote = list("swear loudly")
-	emote_taunt = list("stares ferociously", "Aim his gun")
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclavetrooper ,/obj/effect/spawner/lootdrop/f13/Enclavesoldier)
+	speak = list("REMEMBER THE RIG!","Engaging subhumans!!","Contact spotted!","BURN IN HELL!","NEED BACKUP!")
+	speak_emote = list("swears loudly")
+	emote_taunt = list("stares patriotically", "aims his gun")
 	speak_chance = 10
 	taunt_chance = 25
 
@@ -106,12 +105,12 @@
 	icon_living = "syndicaterangedspace"
 	projectilesound = 'sound/f13weapons/laser_rifle.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/enclaveAER7
-	speak = list("FOR NAVARRO","I'm here to kick your ass and chew bubblegum, AND I'M OUT OF BUBBLEGUM!","ENCLAVE, HURRAH!","DIE IN LASER FIRE!")
-	speak_emote = list("yell hatefully")
-	emote_taunt = list("stares ferociously trough the eyeslits", "spin his gun barrels")
+	speak = list("FOR NAVARRO!","I'm here to kick ass and chew bubblegum, AND I'M OUT OF GUM!","ENCLAVE, HUA!","DIE IN LASER FIRE!")
+	speak_emote = list("yells hatefully")
+	emote_taunt = list("stares patriotically trough the eyeslits", "spins his gun barrels")
 	speak_chance = 30
 	taunt_chance = 50
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclaveelite)
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclaveelite , /obj/effect/spawner/lootdrop/f13/Enclaveelite)
 
 /mob/living/simple_animal/hostile/enclave/officer //just a flavor officer,cowardly but well armed,working on making him summon troops to his aid
     //Plasma rifle, 2 shots for unarmored, 3 for T45 and CA, 4for T51
@@ -132,12 +131,11 @@
 	icon_living = "russianrangedelite"
 	projectilesound = 'sound/f13weapons/plasmarifle.ogg'
 	projectiletype = /obj/item/projectile/plasma
-	speak = list("Contacts! enact balleplan Sigma!","Troopers! Clean these abominations!","I WILL BURN YOUR BODIES!","Troopers! Get ready for a mutie hunt!")
-	speak_emote = list("talk in his headset")
-	emote_taunt = list("stares with disgust")
+	speak = list("Contacts! Enact battleplan Sigma!","Troopers! Clean these abominations!","I WILL BURN YOUR BODIES!","Troopers! Get ready for a mutie hunt!")
+	speak_emote = list("talks into his headset")
 	speak_chance = 30
 	taunt_chance = 50
-	loot = list(/obj/effect/mob_spawn/human/corpse/enclaveofficer )
+	loot = list(/obj/effect/mob_spawn/human/corpse/enclaveofficer , /obj/effect/spawner/lootdrop/f13/Enclaveofficer )
 /mob/living/simple_animal/hostile/enclave/officer/Aggro() //this line can be recycled for other mobs, all mobs belongign to the parent type "enclave" who can see him will come to his aid when he spots a PC....so he can run away
 	..()
 	summon_backup(15) //15 is the radius in which the goons react
