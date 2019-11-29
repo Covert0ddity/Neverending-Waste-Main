@@ -27,6 +27,7 @@
 	death_sound = 'sound/f13npc/dog_death.ogg'
 
 	environment_smash = 0
+	loot = list(/obj/effect/spawner/lootdrop/f13/wolf)
 	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \
 	/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 1)
 	melee_damage_lower = 20
@@ -45,6 +46,7 @@
 	icon_dead = "wolf_dead"
 	icon_gib = "gib"
 	maxHealth = 100
+	loot = list(/obj/effect/spawner/lootdrop/f13/wolf/alpha)
 	health = 100
 	melee_damage_lower = 25
 	melee_damage_upper = 35
