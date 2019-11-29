@@ -575,7 +575,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Nickle-Plated .44 Magnum",		/obj/item/gun/ballistic/revolver/m29/alt,							1299),
 		new /datum/data/wasteland_equipment(".45-70 Scoped Revolver",		/obj/item/gun/ballistic/revolver/sequoia/scoped,					1698),
 		new /datum/data/wasteland_equipment("Mosin nagant revolver",		/obj/item/gun/ballistic/revolver/nagant,							85),
-		new /datum/data/wasteland_equipment("Singleshot shotgun",			/obj/item/gun/ballistic/revolver/single_shotgun						30),
+		new /datum/data/wasteland_equipment("Singleshot shotgun",			/obj/item/gun/ballistic/revolver/single_shotgun,				30),
 		new /datum/data/wasteland_equipment("Improvised singleshot shotgun",	/obj/item/ammo_box/n762,										25),
 		new /datum/data/wasteland_equipment("Caravan shotgun",				/obj/item/gun/ballistic/revolver/caravan_shotgun,					80),
 		new /datum/data/wasteland_equipment("Double barrel shotgun",		/obj/item/gun/ballistic/revolver/doublebarrel,						274),
