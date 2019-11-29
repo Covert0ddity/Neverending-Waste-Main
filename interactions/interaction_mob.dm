@@ -17,15 +17,15 @@
 //	var/datum/organ/external/head/head = get_organ("head")
 //	return head && !(head.status & ORGAN_DESTROYED)
 
-/mob/living/mouth_is_free()
-	if(istype(src, /mob/living/carbon/human))
+/mob/living/carbon/human/mouth_is_free()
+	if(istype(src, /mob/living))
 		var/mob/living/carbon/human/H = src
 		return !H.wear_mask
 	else
 		return TRUE
 
-/mob/living/foot_is_free()
-	if(istype(src, /mob/living/carbon/human))
+/mob/living/carbon/human/foot_is_free()
+	if(istype(src, /mob/living))
 		var/mob/living/carbon/human/H = src
 		return !H.shoes
 	else
