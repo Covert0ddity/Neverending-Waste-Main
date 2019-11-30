@@ -594,7 +594,7 @@
 				 /obj/item/stack/sheet/sinew = 1)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-/*
+
 /datum/crafting_recipe/viperspear
 	name = "Viper Spear"
 	result = /obj/item/twohanded/bonespear/venom
@@ -612,7 +612,7 @@
 				/obj/item/stack/sheet/bone = 2)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-*/
+
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
 	result = /obj/item/twohanded/fireaxe/boneaxe
