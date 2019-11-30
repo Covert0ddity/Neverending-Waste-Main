@@ -612,7 +612,7 @@
 				/obj/item/stack/sheet/bone = 2)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-*/ 
+*/
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
 	result = /obj/item/twohanded/fireaxe/boneaxe
@@ -938,7 +938,7 @@
 	result = /obj/item/reagent_containers/glass/beaker/large
 	reqs = list(/obj/item/stack/sheet/glass = 6)
 	tools = list(TOOL_WELDER)
-	time = 40
+	time = 15
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/syringe
