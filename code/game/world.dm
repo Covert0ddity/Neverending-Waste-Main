@@ -253,8 +253,8 @@ GLOBAL_PROTECT(security_mode)
 
 	s += "<b>\[ENG] Fallout 13 - 18+<br>"
 	s += "<br>"
-	s += "Medium RP \[https://discord.gg/TCj5cJN]<br>"
-	s += "Hosted by Ren"
+	s += "HRP Server \[Disc Invite Only]<br>"
+	s += "Hosted by Rusty"
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)
