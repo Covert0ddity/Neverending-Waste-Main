@@ -435,8 +435,7 @@
 	fire_sound = 'sound/f13weapons/sequoia.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 4
-	extra_damage = 50
-	extra_penetration = 10
+	extra_damage = 45
 
 /obj/item/gun/ballistic/revolver/sequoia/scoped
 	name = "hunting revolver"
@@ -474,14 +473,5 @@
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = 25
+	extra_damage = 15
 
-/obj/item/gun/ballistic/revolver/thatgun
-	name = ".223 pistol"
-	desc = "A .223 rifle modified and cut down to a pistol. This is a one-of-a kind firearm, obviously made with love and skill."
-	icon_state = "thatgun"
-	fire_sound = 'sound/f13weapons/that_gun.ogg'
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
-	w_class = WEIGHT_CLASS_NORMAL
-	extra_damage = 35
-	extra_penetration = 10

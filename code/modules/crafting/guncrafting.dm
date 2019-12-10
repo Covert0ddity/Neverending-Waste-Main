@@ -1,51 +1,6 @@
 //Gun crafting parts til they can be moved elsewhere
 
 // PARTS //
-/obj/machinery/workbench
-	name = "basic workbench"
-	icon = 'icons/obj/machines/reloadingbench.dmi'
-	icon_state = "basic_bench"
-	desc = "A basic workbench for simple to intermediate projects."
-	resistance_flags = INDESTRUCTIBLE
-	density = TRUE
-	layer = BELOW_OBJ_LAYER
-	anchored = TRUE
-	machine_tool_behaviour = TOOL_BWORKBENCH
-	var/wrenchable = 1
-
-/obj/machinery/workbench/can_be_unfasten_wrench(mob/user, silent)
-	if (!wrenchable)  // case also covered by NODECONSTRUCT checks in default_unfasten_wrench
-		return CANT_UNFASTEN
-
-	return ..()
-
-/obj/machinery/workbench/wrench_act(mob/living/user, obj/item/I)
-	default_unfasten_wrench(user, I, 10)
-	return TRUE
-
-/obj/machinery/workbench/attackby(obj/item/W, mob/user, params)
-	if (istype(W, /obj/item/wrench) && !(flags_1&NODECONSTRUCT_1))
-		W.play_tool_sound(src)
-		deconstruct(TRUE)
-		return
-	if(user.a_intent == INTENT_HARM)
-		return ..()
-	if(user.transferItemToLoc(W, drop_location()))
-		return 1
-
-/obj/machinery/workbench/standard
-	name = "standard workbench"
-	desc = "A standard workbench for a wide variety of projects."
-	icon_state = "standard_bench"
-	machine_tool_behaviour = TOOL_SWORKBENCH
-
-/obj/machinery/workbench/advanced
-	name = "advanced workbench"
-	icon_state = "advanced_bench"
-	desc = "A large and advanced pre-war workbench to tackle any project!"
-	machine_tool_behaviour = TOOL_AWORKBENCH
-	can_be_unanchored = 0
-	wrenchable = 0
 
 /obj/item/weaponcrafting/receiver
 	name = "modular receiver"

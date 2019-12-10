@@ -24,11 +24,6 @@
 	damage = 30
 	armour_penetration = 30
 
-/obj/item/projectile/bullet/needle/ap
-	name = "armour piercing needle"
-	damage = 45
-	armour_penetration = 60
-
 /obj/item/projectile/bullet/c38
 	damage = 0
 	armour_penetration = 0

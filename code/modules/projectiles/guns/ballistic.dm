@@ -8,7 +8,6 @@
 	var/init_mag_type = null
 	var/obj/item/ammo_box/magazine/magazine
 	var/casing_ejector = TRUE //whether the gun ejects the chambered casing
-	var/en_bloc = 0
 
 /obj/item/gun/ballistic/Initialize()
 	. = ..()
@@ -122,23 +121,15 @@
 /obj/item/gun/ballistic/attack_self(mob/living/user)
 	var/obj/item/ammo_casing/AC = chambered //Find chambered round
 	if(magazine)
-		if(en_bloc)
-			magazine.forceMove(drop_location())
-			user.dropItemToGround(magazine)
-			magazine.update_icon()
-			playsound(src, "sound/f13weapons/garand_ping.ogg", 70, 1)
-			magazine = null
-			to_chat(user, "<span class='notice'>You eject the enbloc clip out of \the [src].</span>")
+		magazine.forceMove(drop_location())
+		user.put_in_hands(magazine)
+		magazine.update_icon()
+		if(magazine.ammo_count())
+			playsound(src, "sound/weapons/gun_magazine_remove_full.ogg", 70, 1)
 		else
-			magazine.forceMove(drop_location())
-			user.put_in_hands(magazine)
-			magazine.update_icon()
-			if(magazine.ammo_count())
-				playsound(src, "sound/weapons/gun_magazine_remove_full.ogg", 70, 1)
-			else
-				playsound(src, "gun_remove_empty_magazine", 70, 1)
-			magazine = null
-			to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
+			playsound(src, "gun_remove_empty_magazine", 70, 1)
+		magazine = null
+		to_chat(user, "<span class='notice'>You pull the magazine out of \the [src].</span>")
 	else if(chambered)
 		AC.forceMove(drop_location())
 		AC.bounce_away()
