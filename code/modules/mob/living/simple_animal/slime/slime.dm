@@ -4,7 +4,6 @@
 	icon_state = "grey baby slime"
 	pass_flags = PASSTABLE
 	ventcrawler = VENTCRAWLER_ALWAYS
-	gender = NEUTER
 	var/is_adult = 0
 	var/docile = 0
 	faction = list("slime","neutral")
@@ -25,7 +24,6 @@
 	maxHealth = 150
 	health = 150
 	healable = 0
-	gender = NEUTER
 
 	see_in_dark = 8
 

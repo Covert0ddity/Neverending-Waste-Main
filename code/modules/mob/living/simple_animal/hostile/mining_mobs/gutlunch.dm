@@ -26,7 +26,6 @@
 	ventcrawler = VENTCRAWLER_ALWAYS
 	gold_core_spawnable = FRIENDLY_SPAWN
 	stat_attack = UNCONSCIOUS
-	gender = NEUTER
 	stop_automated_movement = FALSE
 	stop_automated_movement_when_pulled = TRUE
 	stat_exclusive = TRUE

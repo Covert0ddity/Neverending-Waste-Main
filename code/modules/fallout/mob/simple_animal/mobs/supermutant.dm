@@ -18,6 +18,7 @@
 	response_help = "touches"
 	response_disarm = "tries to perform a kung fu move, then suddenly remembers that it's actually"
 	response_harm = "hits"
+	loot = list(/obj/effect/spawner/lootdrop/f13/supermutant)
 	maxHealth = 300
 	health = 300
 	force_threshold = 15
@@ -52,6 +53,7 @@
 	icon_dead = "hulk_brahmin_s"
 	maxHealth = 300
 	health = 300
+	gender = MALE
 	speak_chance = 7 //30 //Oh my god he never shuts up.
 	anchored = TRUE
 	mob_size = MOB_SIZE_LARGE
