@@ -837,3 +837,17 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		stored_caps = 0
 	playsound(src, 'sound/items/coinflip.ogg', 60, 1)
 	src.ui_interact(usr)
+
+/obj/machinery/mineral/wasteland_vendor/merchant
+	name = "Merchant Machine"
+	desc = "Wasteland Vending Machine manned by old reprogrammed RobCo trading protectrons. This one will buy all of your things."
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "generic_idle"
+
+/obj/machinery/mineral/wasteland_vendor/merchant/attackby(obj/item/I, mob/living/carbon/human/user, sellprice)
+	if(istype(I, /obj/item) && sellprice >= 0)
+		add_caps(sellprice)
+		Destroy(I)
+	else
+		attack_hand(user)
+		to_chat(usr, "<span class='notice'>This item is not worth anything!</span>")
