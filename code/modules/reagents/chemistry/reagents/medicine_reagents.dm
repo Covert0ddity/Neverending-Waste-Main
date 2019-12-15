@@ -380,7 +380,7 @@
 	description = "Has a 100% chance of instantly healing brute and burn damage. One unit of the chemical will heal 1.25 points of damage. Touch application only. Causes toxloss equal to 66% of what was healed."
 	reagent_state = LIQUID
 	color = "#FFEBEB"
-	overdose_threshold = 10
+	overdose_threshold = 85
 
 /datum/reagent/medicine/synthflesh
 	name = "Synthflesh"
