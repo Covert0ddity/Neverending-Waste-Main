@@ -798,6 +798,7 @@
 			else
 				M.adjustOxyLoss(-20, 0)
 				M.adjustToxLoss(85, 0)
+				M.adjustBrainLoss(90, 0)
 				M.updatehealth()
 				if(M.revive())
 					M.emote("gasp")
@@ -805,8 +806,8 @@
 	..()
 
 /datum/reagent/medicine/strange_reagent/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(0.1*REM, 0)
-	M.adjustFireLoss(0.1*REM, 0)
+	M.adjustBruteLoss(1.8*REM, 0)
+	M.adjustFireLoss(1.8*REM, 0)
 	..()
 	. = 1
 
