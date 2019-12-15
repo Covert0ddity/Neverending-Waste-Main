@@ -398,7 +398,7 @@
 			var/brute = min(C.getBruteLoss(),C.adjustBruteLoss(-1.25 * reac_volume)*-1)
 			var/burn = min(C.getFireLoss(),C.adjustFireLoss(-1.25 * reac_volume)*-1)
 			if(C.stat != DEAD)
-				C.adjustToxLoss((brute+burn)*0.66)
+				C.adjustToxLoss((brute+burn)*1.11)
 			if(show_message)
 				to_chat(M, "<span class='danger'>You feel your burns and bruises healing! It stings like hell!</span>")
 	..()
