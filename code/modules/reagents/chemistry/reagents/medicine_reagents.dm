@@ -780,12 +780,12 @@
 	description = "A miracle drug capable of bringing the dead back to life. Only functions if the target has less than 100 brute and burn damage (independent of one another), and causes slight damage to the living."
 	reagent_state = LIQUID
 	color = "#A0E85E"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolization_rate = 0.1 * REAGENTS_METABOLISM
 	taste_description = "magnets"
 
 /datum/reagent/medicine/strange_reagent/reaction_mob(mob/living/carbon/human/M, method=TOUCH, reac_volume)
 	if(M.stat == DEAD)
-		if(M.getBruteLoss() >= 100 || M.getFireLoss() >= 100)
+		if(M.getBruteLoss() >= 25 || M.getFireLoss() >= 25)
 			M.visible_message("<span class='warning'>[M]'s body convulses a bit, and then falls still once more.</span>")
 			return
 		M.visible_message("<span class='warning'>[M]'s body convulses a bit.</span>")
@@ -797,7 +797,7 @@
 					return
 			else
 				M.adjustOxyLoss(-20, 0)
-				M.adjustToxLoss(-20, 0)
+				M.adjustToxLoss(85, 0)
 				M.updatehealth()
 				if(M.revive())
 					M.emote("gasp")
@@ -805,8 +805,8 @@
 	..()
 
 /datum/reagent/medicine/strange_reagent/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(0.5*REM, 0)
-	M.adjustFireLoss(0.5*REM, 0)
+	M.adjustBruteLoss(0.1*REM, 0)
+	M.adjustFireLoss(0.1*REM, 0)
 	..()
 	. = 1
 
