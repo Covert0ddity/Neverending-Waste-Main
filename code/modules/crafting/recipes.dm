@@ -532,7 +532,7 @@
 	time = 50
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
-/*
+
 /datum/crafting_recipe/kittyears
 	name = "Kitty Ears"
 	result = /obj/item/clothing/head/kitty/genuine
@@ -540,8 +540,8 @@
 	reqs = list(/obj/item/organ/tail/cat = 1,
 				/obj/item/organ/ears/cat = 1)
 	category = CAT_MISC
-*/
-/*
+
+
 /datum/crafting_recipe/skateboard
 	name = "Skateboard"
 	result = /obj/vehicle/ridden/scooter/skateboard
@@ -698,7 +698,7 @@
 				 /obj/item/stack/sheet/sinew = 1)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-/*
+
 /datum/crafting_recipe/viperspear
 	name = "Viper Spear"
 	result = /obj/item/twohanded/bonespear/venom
@@ -716,7 +716,7 @@
 				/obj/item/stack/sheet/bone = 2)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-*/
+
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
 	result = /obj/item/twohanded/fireaxe/boneaxe
