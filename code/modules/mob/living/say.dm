@@ -249,7 +249,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	for(var/_M in GLOB.player_list)
 		var/mob/M = _M
 		if(!M) // if M is null
-    		continue // skip M
+			continue // skip M
 		if(M.stat != DEAD) //not dead, not important
 			continue
 		if(!M.client || !client) //client is so that ghosts don't have to listen to mice
